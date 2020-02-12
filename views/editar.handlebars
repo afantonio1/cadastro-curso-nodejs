@@ -1,0 +1,19 @@
+<h1 class="titulo"> Editar Curso</h1>
+<hr/>
+
+<form action="/editado" method="POST">
+    <label class="titulo-input">Nome do curso:</label>
+    <input type="text" class="form-control" name="titulo" value="{{titulo}}">
+    <label for="conteudo" class="titulo-input">Descrição:</label>
+    <textarea name="conteudo" class="form-control" rows="6">{{conteudo}}</textarea>
+
+    <div class="row">
+        <div class="col-auto">
+           <button type="submit" class="btn btn-info">Salvar</button>
+        </div>
+        <div class="col-auto">
+           <button class="btn btn-danger" type="button" onclick="document.location.href='/listar'">Cancelar</button>
+        </div>
+    </div>
+
+</form>

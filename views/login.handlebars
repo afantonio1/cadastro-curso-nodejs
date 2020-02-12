@@ -1,0 +1,23 @@
+<div class="header-login">
+  <h4>Identifique-se </h4>
+  <hr />
+</div>
+
+<div class="container-fluid">
+  <form action="/logar" method="POST">
+      <label for="login">Login</label>
+      <input type="email" id="login" class="form-control" placeholder="E-mail" required="true"/>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" class="form-control" placeholder="Senha" required="true"/>
+      <button class="btn btn-success" type="submit">Entrar</button>
+  </form>
+
+  <div class="registrar">
+    <p>Ainda não tem uma conta? <a href="/registrar">Cadastre-se!</a></p>
+  </div>
+
+  <div class="esqueceu-senha">
+    <a href="/relembrar-senha">Esqueceu sua senha?</a>
+  </div>
+
+</div>

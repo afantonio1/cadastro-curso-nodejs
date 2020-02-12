@@ -1,0 +1,22 @@
+<div class="header-login">
+  <h4>Redefinir senha </h4>
+  <hr />
+</div>
+
+<div class="container-fluid">
+  <form action="/relembrar" method="POST">
+      <label for="login">Email</label>
+      <input type="email" id="login" class="form-control" placeholder="E-mail o email cadastrado" required="true"/>
+
+    <div class="row">
+        <div class="col-auto">
+           <button type="submit" class="btn btn-info">Enviar</button>
+        </div>
+        <div class="col-auto">
+           <button class="btn btn-danger" type="button" onclick="document.location.href='/login'">Cancelar</button>
+        </div>
+    </div>
+
+
+  </form>
+</div>

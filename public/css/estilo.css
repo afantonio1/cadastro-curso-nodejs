@@ -1,0 +1,44 @@
+body{
+    background-color:#E5DDD5;    
+}
+
+.container{
+    background-color: white;
+    margin-top: 4em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-bottom: 3em;
+}
+
+.btn{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.titulo{
+    text-align: center;
+}
+
+footer {
+   text-align: center;
+   background-color: rgb(52,58,64);
+   color: white;
+}
+
+.titulo-input{
+    font-weight: bold;
+}
+
+.esqueceu-senha{
+    padding-bottom: 0.5em;
+}
+
+.header-login{
+    padding-top: 1em;
+    color: rgb(52,58,64);
+    font-style: italic;
+}
+
+.btn.btn-success{
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+<h1 class="titulo"> Registrar</h1>
+<hr/>
+
+<form action="/register" method="POST">
+    <label class="titulo-input">Nome:</label>
+    <input type="text" class="form-control" name="usu-nome" required="true">
+    <label class="titulo-input">Email:</label>
+    <input type="email" name="usu-email" class="form-control" required="true">
+    <label class="titulo-input">Senha:</label>
+    <input type="password" name="usu-senha" class="form-control" required="true">
+    <label class="titulo-input">Confirmação de senha:</label>
+    <input type="password" name="usu-confirm-senha" class="form-control" required="true">
+
+    <div class="row">
+        <div class="col-auto">
+           <button type="submit" class="btn btn-info">Registrar</button>
+        </div>
+        <div class="col-auto">
+           <button class="btn btn-danger" type="button" onclick="document.location.href='/login'">Cancelar</button>
+        </div>
+    </div>
+</form>

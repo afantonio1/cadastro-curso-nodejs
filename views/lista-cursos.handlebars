@@ -1,0 +1,23 @@
+<h1 class="titulo">Lista de Cursos: </h1>
+<hr/>
+
+{{#each cursos}}
+    <h3>Curso.: {{dataValues.titulo}}</h3>
+    <p>Descrição.: {{dataValues.conteudo}}</p>
+    <small>Data Cadastro.: {{#formatDate dataValues.createdAt}}{{/formatDate}}</small>
+
+    <div class="row">
+      <div class="col-auto">
+        <form action="/edit/{{dataValues.id}}" method="get">
+          <button type="submit" class="btn btn-info" title="Editar o curso.">Editar</button>
+        </form>
+      </div>
+      <div class="col-auto">
+        <form action="/excluir/{{dataValues.id}}" method="get">
+          <button type="submit" class="btn btn-danger" title="Excluir este curso.">Excluir</button></a>
+        </form>
+      </div>
+    </div>
+    <hr>
+
+{{/each}}

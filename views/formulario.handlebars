@@ -1,0 +1,19 @@
+<h1 class="titulo"> Cadastro de Cursos</h1>
+<hr/>
+
+<form action="/add" method="POST">
+    <label class="titulo-input">Nome do curso:</label>
+    <input type="text" class="form-control" name="titulo" required="true">
+    <label class="titulo-input">Descrição:</label>
+    <textarea name="conteudo" class="form-control" rows="6" required="true"></textarea>
+
+    <div class="row">
+        <div class="col-auto">
+          <button type="submit" class="btn btn-info">Cadastrar</button>
+        </div>
+        <div class="col-auto">
+           <button class="btn btn-danger" type="button" onclick="document.location.href='/listar'">Cancelar</button>
+        </div>
+    </div>
+
+</form>
