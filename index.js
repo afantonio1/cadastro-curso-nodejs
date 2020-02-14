@@ -46,7 +46,6 @@ let id;
    res.render(__dirname +'/views/relembrar-senha');
 });
 
-
    //rota para lista cursos cadastrados
    app.get('/listar', function(req, res){
       Curso.findAll({order: [['id','desc']]}).then(function(cursos){
